@@ -1,0 +1,107 @@
+---
+title: "Utilizing Google Earth Engine Images to Analyze the Relationship Between Livestock Growth and Land Degradation in Mongolia"
+author: "bbaasan"
+date: "2024-08-07"
+output: 
+  pdf_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+This paper explores the relationship between livestock growth and land degradation in Mongolia using Google Earth Engine (GEE) and greenness indices derived from Red Green Blue (RGB) channels. By leveraging satellite imagery and the advanced data analysis capabilities of GEE, we aim to identify spatial and temporal patterns of land degradation associated with increasing livestock populations. This study demonstrates the utility of GEE in environmental monitoring and management.   
+
+Keywords: Land degradation, Livestock growth, Google Earth Engine, RGB channels, Greenness index, Satellite imagery   
+
+
+# Introduction   
+
+Mongolia's traditional nomadic herding practices are increasingly challenged by environmental degradation, driven by the growth of livestock populations. This study aims to utilize Google Earth Engine, a powerful cloud-based platform for planetary-scale environmental data analysis, combined with greenness indices based on RGB channels, to better understand the extent and patterns of land degradation in relation to livestock density.  
+
+# Literature  
+
+- How reliable is to use Google Earth Engine data in this matter?  
+- What is Greenness Index:
+  - How it been used before? 
+  - What is the purpose?  
+  
+  
+# Methodology  
+
+### Data Collection  
+
+- Satellite Imagery: High-resolution satellite images from Landsat and Sentinel missions available in GEE were used. Time
+series data spanning the past two decades were collected to observe changes over time.   
+  - Image Processing:  
+    - Preprocessing: Images were preprocessed to correct for atmospheric conditions and cloud cover using GEE's built-in 
+    algorithms.
+    
+- Livestock Data: Statistical data on livestock numbers were obtained from national agricultural databases and integrated 
+with spatial data.   
+
+Greenness Index Calculation: Greenness indices were calculated based on the RGB channels. The formula used was:  
+
+$$
+Greenness \text{  } Index = \frac{2G - (R+B)}{2G + (R+B)}
+$$
+where R, G, and B represent the red, green, and blue channels, respectively.  
+
+### Controls  
+  - Socioeconomic Controls:
+    - Income: Including income levels can help control for economic activities that might influence land use practices and
+    degradation.
+    - Household Size: Larger households may have different land use patterns and livestock management practices compared to 
+    smaller ones.
+    - Population Density: Areas with higher population density might experience more pressure on land resources, influencing 
+    degradation.
+    - Number of Herders: The number of herders can indicate the intensity of grazing practices and their impact on land 
+    degradation.
+
+  - Environmental Controls:  
+    - Climate Variables: Factors such as precipitation, temperature, and drought frequency can significantly impact 
+    vegetation cover and soil health.
+    - Soil Type: Different soil types have varying susceptibilities to erosion and degradation.
+    - Topography: Slope and elevation can influence water runoff and soil erosion, affecting land degradation.
+    
+  - Land Use and Management Controls:  
+    - Land Tenure Systems: The type of land ownership (private vs. communal) can affect how land is managed and its 
+    susceptibility to degradation.
+    - Grazing Practices: Information on grazing intensity and rotational practices can help control for management 
+    differences that impact land health.
+    - Access to Markets: Proximity to markets can influence livestock numbers and types, as well as the intensity of land 
+    use.
+    
+  - Demographic Controls:  
+    - Age and Education of Herders: These factors can influence the adoption of sustainable land management practices.
+    - Migration Patterns: Influx or outflux of people can impact population density and land use practices.
+
+### Analysis  
+
+- Spatial:
+- Trend: Long-term trends in vegetation cover, as indicated by the greenness index, were analyzed using time series analysis.
+- Correlation Analysis: Spatial correlation between livestock density and greenness index values was performed to identify
+areas of significant impact.
+
+# Results  
+
+The analysis indicated a clear spatial correlation between high livestock density and areas of severe land degradation. Regions such as the central steppes and eastern Mongolia showed significant decreases in greenness index values, indicating reduced vegetation cover, over the study period. The temporal analysis revealed periods of rapid degradation corresponding with increases in livestock numbers.
+
+# Discussion  
+
+The results suggest that overgrazing is a primary factor contributing to land degradation in Mongolia. The use of Google Earth Engine, combined with greenness indices from RGB channels, allowed for comprehensive monitoring and analysis, providing valuable insights into the spatial and temporal dynamics of environmental change. This method offers a scalable and efficient approach to environmental monitoring.
+
+
+# Conclusion   
+
+Google Earth Engine, coupled with greenness indices derived from RGB channels, proved to be an effective tool for analyzing the relationship between livestock growth and land degradation in Mongolia. The platform's capabilities in handling large-scale environmental data and performing complex analyses make it a valuable resource for researchers and policymakers. Future studies should integrate GEE with other remote sensing technologies for a more holistic understanding of environmental changes.  
+
+# Reference
+
+# Appendix:  
+
+- [Include sample satellite images, vegetation indices, and analysis results]  
+- [Provide detailed methodology for reproducibility, including GEE scripts and data sources]  
+
